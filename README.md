@@ -1,3 +1,7 @@
 # priority-navigation-pattern
 
-##Hello World
+## Quick start
+```bash
+npm install
+npm run
+```
