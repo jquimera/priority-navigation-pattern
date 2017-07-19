@@ -1,0 +1,24 @@
+.ds-navigationWrapper {
+  @include coreMenu();
+  ul {
+    @include coreMenuInnerWrapper();
+  }
+  .ds-visibleMenu {
+    @include coreMenuVisible();
+  }
+  .ds-horizontalMenu {
+    @include coreMenuHorizontal();
+  }
+  .ds-verticalMenu {
+    @include coreMenuVertical();
+  }
+  .ds-menuWrapper {
+    @include coreMenuWrapper();
+  }
+  .ds-menuHidden {
+    @include coreMenuHidden();
+  }
+  .ds-display-hidden-button {
+    @include coreDisplayMoreButton();
+  }
+}

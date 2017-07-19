@@ -1,0 +1,59 @@
+@mixin coreMenu() {
+  position: relative;
+  display: block;
+}
+
+@mixin coreMenuInnerWrapper() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin coreMenuHorizontal() {
+  .ds-menuInside {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+  }
+  .ds-menuItem {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@mixin coreMenuVertical() {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin coreMenuWrapper() {
+  width: 100%;
+  overflow: hidden;
+}
+
+@mixin coreMenuHidden() {
+  display: none;
+  &.isActive {
+    display: block;
+  }
+}
+
+@mixin coreDisplayMoreButton() {
+  display: none;
+  a {
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+  }
+  &.activeButton {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+  }
+}
+
+@mixin coreMenuVisible() {
+  display: flex;
+  flex: 1 0 100%;
+}
